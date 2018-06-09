@@ -1,0 +1,18 @@
+1. Define Arry in main class
+export class AppComponent {
+
+  heroes = ['Jyoti', 'Deepak', 'Pooja','Abhishek' ];
+
+}
+
+
+2. Use it in template html as below.
+
+<ul *ngFor="let hero of heroes">
+    <li *ngIf="hero.indexOf('k') != -1"> 
+    {{ hero }} 
+    </li>
+  </ul>
+
+  <ul *ngFor= "let hero of heroes">
+    <li   *ngIf="hero.indexOf('k') != -1 ">{{hero.indexOf('k') != -1 }}<span>{{hero}}</span></li></ul>
